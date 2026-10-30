@@ -1,5 +1,0 @@
-IdP Entity ID: https://npfederate.erieinsurance.com/hooverkeyscripts
-SSO URL: https://npfederate.erieinsurance.com/saml/idp/profile/redirectorpost/sso
-Logout URL: https://npfederate.erieinsurance.com/saml/idp/profile/post/sls
-NameID format: urn:oasis:names:tc:SAML:1.1:nameid-format:emailAddress
-Attribute names: Email Address, First name, Last name
