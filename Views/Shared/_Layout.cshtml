@@ -1,0 +1,73 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewBag.Title - SAML MVC Application</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f9;
+        }
+
+        .navbar {
+            background-color: #007bff;
+            color: white;
+            padding: 10px 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+            .navbar a {
+                color: white;
+                text-decoration: none;
+                margin: 0 10px;
+            }
+
+                .navbar a:hover {
+                    text-decoration: underline;
+                }
+
+        .content {
+            padding: 20px;
+        }
+
+        .footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+            margin-top: 20px;
+        }
+
+            .footer a {
+                color: #007bff;
+                text-decoration: none;
+            }
+
+                .footer a:hover {
+                    text-decoration: underline;
+                }
+    </style>
+</head>
+<body>
+    <div class="navbar">
+        <div>
+            <a href="/">Home</a>
+            <a href="/Home/Secure">Secure</a>
+            <a href="/Account/Login">Login</a>
+            <a href="/Account/SignedIn">Profile</a>
+            <a href="/Account/Logout">Logout</a>
+        </div>
+    </div>
+    <div class="content">
+        @RenderBody()
+    </div>
+    <div class="footer">
+        Developed by <a href="https://www.linkedin.com/in/gajananthate/" target="_blank">Gajanan Thate</a>
+    </div>
+</body>
+</html>

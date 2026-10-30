@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<EntityDescriptor xmlns="urn:oasis:names:tc:SAML:2.0:metadata" ID="I10cf7d4c48355450" xmlns:saml="urn:oasis:names:tc:SAML:2.0:assertion" xmlns:ds="http://www.w3.org/2000/09/xmldsig#" entityID="https://npfederate.erieinsurance.com/hooverkeyscripts">
+	<IDPSSODescriptor protocolSupportEnumeration="urn:oasis:names:tc:SAML:2.0:protocol">
+		<KeyDescriptor>
+			<ds:KeyInfo>
+				<ds:X509Data>
+					<ds:X509Certificate>MIIDljCCAn6gAwIBAgIEHuvW6zANBgkqhkiG9w0BAQsFADCBjDELMAkGA1UEBhMCVVMxFTATBgNVBAgTDFBlbm5zeWx2YW5pYTENMAsGA1UEBxMERXJpZTEdMBsGA1UEChMURXJpZSBJbnN1cmFuY2UgR3JvdXAxCzAJBgNVBAsTAklUMSswKQYDVQQDEyJob292ZXJrZXlzY3JpcHRzLmVyaWVpbnN1cmFuY2UuY29tMB4XDTI2MDYxMDE1MjczOVoXDTM2MDYwNzE1MjczOVowgYwxCzAJBgNVBAYTAlVTMRUwEwYDVQQIEwxQZW5uc3lsdmFuaWExDTALBgNVBAcTBEVyaWUxHTAbBgNVBAoTFEVyaWUgSW5zdXJhbmNlIEdyb3VwMQswCQYDVQQLEwJJVDErMCkGA1UEAxMiaG9vdmVya2V5c2NyaXB0cy5lcmllaW5zdXJhbmNlLmNvbTCCASIwDQYJKoZIhvcNAQEBBQADggEPADCCAQoCggEBAN+Jv22AarcxM4VFVHTCgDuecns3RGdFNKBT1cu75WpeS306X1QfLi70wOLUDKeF5B2kHDL26Rzz+A0schAD3DFpP4li6ZzeR7Z4xoC3xt0q/5i+yiGpg27vmV7dw/M2LtqwZ0REF+Sw3Dk0F5cga1M2bf2T2jzcfjyfoJNkYJ8eTba0ZvYMcgdV0rQ++BfdeuIE1b2TSIUDw5/z2D8bzL1mjG6NUtzhFffVcwl1chHXHfFxYBFFCC60nNAZqiMlBi6gKJqaLs1Y662kK8/zIZaNFyQSWvQ6NrklS6ZTQJzz5oRD9b5aWpGIFBV/16uQdS4jMhXtBFlSha+kY8aCMl8CAwEAATANBgkqhkiG9w0BAQsFAAOCAQEAUl5yX8fNbO8+LTr2BDo4HqCCDhNw18s8NqcOjyx5OO4RGoJkMKBPoyTyCiDJwyzlrU2aU6JjOATh2LHqQEMlEs70nlZ+zGFOQFLRvd2HHlGXUsXRQnNkB9pbv9pwrkq0VnbX+inrC1s9AzKeFk7S1w9FxBDIKhWG0cW/lmbt3164ezBg5VWyN4fioS9QhiErpSvSJHisee1vgsDe4AISLS6DViZ7iO5V8L1rEd3aZPRz8WgQ65SqO41bckCpBcuU+JJXI3vSBqkrN7iV5J/FBv4dhRzZaoPYDQByXPfzH560GGZSwQSbS+2ppeyY7VE3tJdwcqOC/MyiGcCs5v2oyA==</ds:X509Certificate>
+				</ds:X509Data>
+			</ds:KeyInfo>
+		</KeyDescriptor>
+		<SingleLogoutService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-POST" Location="https://npfederate.erieinsurance.com/saml/idp/profile/post/sls" ResponseLocation="https://npfederate.erieinsurance.com/saml/idp/profile/post/slr">
+		</SingleLogoutService>
+		<SingleLogoutService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-Redirect" Location="https://npfederate.erieinsurance.com/saml/idp/profile/redirect/sls" ResponseLocation="https://npfederate.erieinsurance.com/saml/idp/profile/redirect/slr">
+		</SingleLogoutService>
+		<NameIDFormat>urn:oasis:names:tc:SAML:1.1:nameid-format:emailAddress</NameIDFormat>
+		<SingleSignOnService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-POST" Location="https://npfederate.erieinsurance.com/saml/idp/profile/redirectorpost/sso">
+		</SingleSignOnService>
+		<SingleSignOnService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-Redirect" Location="https://npfederate.erieinsurance.com/saml/idp/profile/redirectorpost/sso">
+		</SingleSignOnService>
+		<saml:Attribute NameFormat="urn:oasis:names:tc:SAML:2.0:attrname-format:unspecified" Name="Email Address">
+		</saml:Attribute>
+		<saml:Attribute NameFormat="urn:oasis:names:tc:SAML:2.0:attrname-format:unspecified" Name="First name">
+		</saml:Attribute>
+		<saml:Attribute NameFormat="urn:oasis:names:tc:SAML:2.0:attrname-format:unspecified" Name="Last name">
+		</saml:Attribute>
+	</IDPSSODescriptor>
+</EntityDescriptor>
